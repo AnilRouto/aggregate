@@ -26,6 +26,7 @@ public class AggregatorController {
     }
 
     //Calling Review service using feign
+	//heloo continew
     @GetMapping("/reviews/{id}")
     public List<Review> getReviews(@PathVariable String id){
         return reviewProxy.getReview(id);
